@@ -18,12 +18,12 @@ const Profile = (props) => {
         className={`my-3 d-flex align-items-center ${mobile && "flex-column"}`}
     >
         <div>
-            <Link className='align-self-center' to={`/profiles/{id}`}>
+            <Link className='align-self-center' to={`/profiles/${id}`}>
                 <Avatar src={image} height={imageSize} />
             </Link>
         </div>
         <div className={`mx-2 ${styles.WordBreak}`}>
-            <srtrong>{owner}</srtrong>
+            <strong>{owner}</strong>
         </div>
         <div className={`text-right ${!mobile && 'ml-auto'}`}>
             {!mobile && currentUser && !is_owner && (
